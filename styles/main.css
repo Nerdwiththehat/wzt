@@ -1,14 +1,52 @@
+/*font styles from here on in are totally legal!*/
+@font-face{
+	font-family: "Futura";
+	src: url("../fonts/Futura_0.otf");
+	url("../fonts/Futura_0.otf");
+}
+@font-face{
+	font-family: "Futura";
+	src: url("../fonts/Futura-Bold.otf");
+	url("../fonts/Futura-Bold.otf");
+	font-weight: bold;
+}
+@font-face{
+	font-family: "Futura";
+	src: url("../fonts/Futura Italic.ttf");
+	url("../fonts/Futura Italic.ttf");
+	font-style: italic;
+}
+@font-face{
+	font-family: "Futura";
+	src: url("../fonts/Futura-BoldOblique.otf");
+	url("../fonts/Futura-BoldOblique.otf");
+	font-weight: bold;
+	font-style: italic;
+}
 body{
     margin:40px auto;
 	max-width: 650px;
 	line-height: 1.6;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-family: 'Futura', sans-serif;
+	font-size: 1em;
 	color: #444;
 	padding: 0 10px
 }
 h1,h2,h3{
-    line-height: 1.2
+    line-height: 1.2;
+}
+h1{
+	font-size: 3.375em;
+	font-weight: bold;
+	color: black;
+}
+h2{
+	font-size: 2.25em;
+	font-weight: 400;
+}
+h3{
+	font-size: 1.5;
+	font-weight: 400;
 }
 .immargin{
     width: 100vw;
@@ -25,7 +63,7 @@ a:visited{
 }
 footer{
     font-size: 8pt;
-	font-family: Arial;
+	font-family: "Futura";
 	color: #000000;
 	background-color: transparent;
 	font-weight: 400;
@@ -39,4 +77,5 @@ p{
 }
 strong{
     color: black;
+	font-weight: 900
 }
