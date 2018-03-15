@@ -72,6 +72,21 @@ footer{
 	vertical-align: baseline;
 	white-space: pre-wrap;
 }
+.footerimg{
+	height: 1em;
+	width: auto;
+}
+aside{
+    font-size: 8pt;
+	font-family: "Futura";
+	color: #000000;
+	background-color: transparent;
+	font-weight: 400;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: baseline;
+	white-space: pre-wrap;
+}
 strong{
     color: black;
 	font-weight: 900;
@@ -85,11 +100,17 @@ nav ul {
 	justify-content: flex-start;
 	align-items: left;
 }
+
 /* Navigation & layout begins here */
+
+/* Nav:DefineElements */
 #container > header		{grid-area: header;}
 #container > nav		{grid-area: nav;}
 #container > article	{grid-area: article;}
 #container > footer		{grid-area: footer;}
+#container > aside		{grid-area: aside;}
+
+/* Nav:Implement */
 #container{
 	margin-left: auto;
 	margin-right: auto;
@@ -101,8 +122,11 @@ nav ul {
 	grid-template-areas: 
 		"header header"
 		"nav article"
-		"nav footer"
+		"nav aside"
+		"footer footer"
 }
+
+/* Nav:Mobile/Responsive */
 @media (max-width: 750px) and (orientation: portrait){
 	nav ul{
 		list-style: none;
@@ -125,5 +149,6 @@ nav ul {
 			"nav"
 			"article"
 			"footer"
+			"aside"
 	}
 }
