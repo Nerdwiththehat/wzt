@@ -7,6 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>West Zweiwood Techmatics</title>
         <link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script>
+	  $(document).ready(function(){
+		  $('.slider').bxSlider({
+			  auto: true,
+			  mode: 'vertical',
+			  speed: 1000,
+			  infiniteLoop: true,
+			  pager: false,
+			  controls: false,
+			  responsive: false,
+		  });
+	  });
+		</script>
 		<link rel="icon" type="image/png" href="../images/wzt_fav.png">
     </head>
 	
@@ -48,6 +64,13 @@
 		</nav>
 		
 		<article>
+			
+			<div class="slider">
+				<div><img src="../images/GE_Turboencabulator_pg_1.png" alt="The GE Turboencabulator"></div>
+				<div><img src="../images/pr-2800-7a.png" alt="Advancements To The Turboencabulator"></div>
+				<div><img src="../images/tech-5_mems_2_lrg.png" alt="Modern MEMS Microelectric Turboencabulator"></div>
+			</div>
+			
 		</article>
 		
 		<footer>
