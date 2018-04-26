@@ -8,6 +8,17 @@
 	<title>West Zweiwood Techmatics</title>
 	<link href="styles/main.css" rel="stylesheet">
 	<link href="images/wzt_fav.png" rel="icon" type="image/png">
+	<script>
+		$('a[href^="#"]').on('click', function(event) {
+			var target = $(this.getAttribute('href'));
+
+			if( target.length ) {event.preventDefault();
+			$('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    	}
+		});		
+	</script>
 </head>
 <body>
 	<div id="container">
@@ -20,23 +31,23 @@
         -->
 		<header>
 			<div class="immargin">
-				<a href="/wzt/index.html"><img alt="WZT Logo" height="190" src="images/wzt_logo.png"></a>
+				<a href="/"><img alt="WZT Logo" height="190" src="images/wzt_logo.png"></a>
 			</div>
 			<h1>The Best in Electronics, MEMS, and Beyond</h1>
 		</header>
 		<nav>
 			<ul>
 				<li>
-					<h2><a class="navlink" href="history/index.html">History</a></h2>
+					<h2><a class="navlink" href="history">History</a></h2>
 				</li>
 				<li>
-					<h2><a class="navlink" href="productsclients/index.html">Products & Clients</a></h2>
+					<h2><a class="navlink" href="productsclients">Products & Clients</a></h2>
 				</li>
 				<li>
-					<h2><a class="navlink" href="team/index.html">Our Team</a></h2>
+					<h2><a class="navlink" href="team">Our Team</a></h2>
 				</li>
 				<li>
-					<h2><a class="navlink" href="contact/index.html">Contact Us</a></h2>
+					<h2><a class="navlink" href="#form">Contact Us</a></h2>
 				</li>
 			</ul>
 		</nav>
@@ -53,14 +64,21 @@
 			<p>and other <em>insurmountable</em> odds.</p>
 			<h2>What're We Up To?</h2>
 			<p>Here at WZT, we've been focused on our <b>widget-manufacturing</b> process to deliver proven widget implementation to consumers and business like you. Since 1970, our production line has been churning out blue and orange widgets at the rate of <em>700 thousand units a month!</em></p>
-			<p>Given the difficulty in securing line space for productions like this, get in touch with us <a href="contact/index.html">here</a> to discuss the process for bringing your widget plans into the real world, or for a consultation about our widget production pipeline.</p>
+			<p>Given the difficulty in securing line space for productions like this, get in touch with us <a href="#form">here</a> to discuss the process for bringing your widget plans into the real world, or for a consultation about our widget production pipeline.</p>
 			<p>Along with advances in the widget manufacturing pipeline, we're proud of our work on the <b>microelectronic-retro-turboencabulator</b>, a new advancement in <abbr title="Microelectromechanical systems">MEMS</abbr> grammeter Skor-motion stabalisation, and inverse reactive current detection.</p>
 			<p>We've been able to bring this microelectronic-retro-turboencabulator to market at a fraction of the cost of other high-end retro-turboencabulators, with guaranteed stator efficiency improvements of up to <em>70%</em> over traditional retro-encabulation.</p>
 			<p>You can find more information about our lines of microelectronics <a href="productsclients/index.html">here</a>, or more about our microelectronic- and retro-turboencabulators <a href="productsclients/index.html">here</a>.</p>
+			<a id="form"><h2>Get in Touch:</h2></a>
+			<div class="form">
+				<form action="action_page.php">
+					<label for="name">Name</label> <input id="name" name="name" placeholder="Your name.." type="text"> <label for="mail">Email Address</label> <input id="mail" name="mail" placeholder="Your email address..." type="text"><label for="subject">Subject</label> 
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <input type="submit" value="Submit">
+				</form>
+			</div>
 		</article>
-		
-		<aside>*no cats were harmed on or around the WZT manufacturing pipeline. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Our lawyers told us to make sure we say that.</a></aside>
-		
+		<aside>
+*no cats were harmed on or around the WZT manufacturing pipeline. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Our lawyers told us to make sure we say that.</a>
+		</aside>
 		<footer>
 			Wᴇsᴛ Zᴡᴇɪᴡᴏᴏᴅ Tᴇᴄʜᴍᴀᴛɪᴄs is an obviously hilarious project of <a href="https://www.twitter.com/nerdwiththehat">Liam Hefferman</a> - <a href="https://creativecommons.org/licenses/by-sa/4.0"><img alt="Creative Commons" class="footerimg" src="https://mirrors.creativecommons.org/presskit/icons/cc.png"><img alt="BY" class="footerimg" src="https://mirrors.creativecommons.org/presskit/icons/by.png"><img alt="ShareAlike" class="footerimg" src="https://mirrors.creativecommons.org/presskit/icons/sa.png"></a> - 2018
 		</footer>
